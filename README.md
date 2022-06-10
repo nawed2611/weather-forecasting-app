@@ -2,6 +2,8 @@
 
 Weather Forecaster is a React App that allows you to search for any city and it'll show the weather forecast for the city. It uses WeatherAPI for fetching the data and Material UI React Framework
 
+[Deployed Link 🚀🚀](https://weather-forecasting-app-nawed2611.vercel.app/)
+
 ## How to Search
 
  - Search for any city with out the date picker to fetch current day Weather Forecast
