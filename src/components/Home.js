@@ -3,9 +3,9 @@ import Typography from '@mui/material/Typography';
 
 const Home = () => {
   return (
-    <div>
-      {/* <Typography variant="h3">Search For any City and get their Weather Info</Typography>
-      <Typography variant="h6">Super Easy to Search </Typography> */}
+    <div style={{display: "flex", height: "50vh", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+      <Typography variant="h4">Search for any City above</Typography>
+      <Typography variant="subtitle1">Weather made simple</Typography>
     </div>
   )
 }
