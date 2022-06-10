@@ -21,17 +21,18 @@ function App() {
     <Router>
       <div className="App" >
 
-        <Link to="/" style={{textDecoration: "none", color: "black", display: "flex", justifyContent: "center", alignItems: "center" }}><Typography variant="h2">Weather Forecaster</Typography></Link>
+        <Link to="/" style={{textDecoration: "none", color: "black", display: "flex", justifyContent: "center", alignItems: "center" }}><Typography mt={2} variant="h2">Weather Forecaster</Typography></Link>
 
         <form onSubmit={handleSubmit} style={{display: "flex", justifyContent: "center", alignItems: "center", margin: "2rem" }}>
           <input type="text" name="city" value={city} style={{ margin: "0.5rem", padding: "0.5rem"}} placeholder="eg. Kolkata" onChange={(e) => setCity(e.target.value) } />
-          <input type="date" name="date" value={date} style={{ margin: "0.5rem", padding: "0.5rem"}}  onChange={(e) => setDate(e.target.value) } />
-          <Link to="/search" style={{textDecoration: "none"}}><Button type="submit" size="small">Search</Button></Link>
+          <input type="date" name="date" value={date} style={{ margin: "0.5rem", padding: "0.5rem"}} onChange={(e) => setDate(e.target.value) } />
+          <Link to="/search" style={{textDecoration: "none"}}><Button type="submit" size="small" variant="contained">Search</Button></Link>
+          
         </form>
 
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/search" element={<Search city={city} />} />
+          <Route path="/search" element={<Search city={city} date={date} />} />
         </Routes>
       </div>
     </Router>
